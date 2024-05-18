@@ -36,7 +36,7 @@ class _HomeScreenState extends State<HomeScreen>{
       child: const Text('HOME',
         style: TextStyle(fontSize: 40),
       ),
-
+///////////////////////////////////////
     ),
     Container(
       decoration: BoxDecoration(
@@ -60,7 +60,7 @@ class _HomeScreenState extends State<HomeScreen>{
               ]
           )
       ),
-
+//////////////////////////////////
         alignment: Alignment.center,
         child: const Text('Settings',style: TextStyle(fontSize: 40),
         ),
@@ -71,7 +71,7 @@ class _HomeScreenState extends State<HomeScreen>{
   Widget build(BuildContext context){
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.tealAccent,
+        backgroundColor: Colors.lightGreenAccent.shade100,
         actions: [
           IconButton(
             icon: Icon(Icons.search),
