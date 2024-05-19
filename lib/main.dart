@@ -36,7 +36,7 @@ class _HomeScreenState extends State<HomeScreen>{
       child: const Text('HOME',
         style: TextStyle(fontSize: 40),
       ),
-
+///////////////////////////////////////
     ),
     Container(
       decoration: BoxDecoration(
@@ -60,7 +60,7 @@ class _HomeScreenState extends State<HomeScreen>{
               ]
           )
       ),
-
+//////////////////////////////////
         alignment: Alignment.center,
         child: const Text('Settings',style: TextStyle(fontSize: 40),
         ),
@@ -71,12 +71,12 @@ class _HomeScreenState extends State<HomeScreen>{
   Widget build(BuildContext context){
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.grey,
+        backgroundColor: Colors.lightGreenAccent.shade100,
         actions: [
           IconButton(
             icon: Icon(Icons.search),
             onPressed: (){
-              print('Searching');
+              print('Searching searching ........');
             },
           ),
           PopupMenuButton(itemBuilder: (context){
@@ -116,7 +116,7 @@ class _HomeScreenState extends State<HomeScreen>{
       bottomNavigationBar: MediaQuery.of(context).size.width<640?
       BottomNavigationBar(
         currentIndex: _selectedIndex,
-        unselectedItemColor: Colors.grey,
+        unselectedItemColor: Colors.teal.shade100,
         selectedItemColor: Colors.amber.shade100,
         onTap: (int index){
           setState(() {
