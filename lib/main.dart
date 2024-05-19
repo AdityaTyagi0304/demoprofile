@@ -116,7 +116,7 @@ class _HomeScreenState extends State<HomeScreen>{
       bottomNavigationBar: MediaQuery.of(context).size.width<640?
       BottomNavigationBar(
         currentIndex: _selectedIndex,
-        unselectedItemColor: Colors.grey,
+        unselectedItemColor: Colors.teal.shade100,
         selectedItemColor: Colors.amber.shade100,
         onTap: (int index){
           setState(() {
